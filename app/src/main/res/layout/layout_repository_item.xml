@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_repository"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/dimen16"
+    android:stateListAnimator="@animator/repository_state_animator">
+
+    <TextView
+        android:id="@+id/tvOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="#0969da"
+        android:textSize="@dimen/text16"
+        app:layout_constraintEnd_toStartOf="@id/tvRepositoryName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="atom / " />
+
+    <TextView
+        android:id="@+id/tvRepositoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen16"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textColor="#0969da"
+        android:textSize="@dimen/text16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvStarsToday"
+        app:layout_constraintStart_toEndOf="@id/tvOwnerName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="atom" />
+
+    <TextView
+        android:id="@+id/tvStarsToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:includeFontPadding="false"
+        android:textColor="#57606a"
+        android:textSize="@dimen/text12"
+        app:drawableStartCompat="@drawable/ic_star_outline_16"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRepositoryName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvRepositoryName"
+        app:layout_constraintTop_toTopOf="@+id/tvRepositoryName"
+        tools:text="65 stars today" />
+
+    <TextView
+        android:id="@+id/tvRepositoryDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen4"
+        android:includeFontPadding="false"
+        android:textColor="#57606a"
+        android:textSize="@dimen/text14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRepositoryName"
+        tools:text="The hackable text editor" />
+
+    <ImageView
+        android:id="@+id/ivLanguageColor"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/tvLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLanguage"
+        app:srcCompat="@drawable/bg_language_color" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen8"
+        android:layout_marginTop="@dimen/dimen12"
+        android:textSize="@dimen/text14"
+        app:layout_constraintStart_toEndOf="@id/ivLanguageColor"
+        app:layout_constraintTop_toBottomOf="@id/tvRepositoryDescription"
+        tools:text="Javascript" />
+
+    <ImageView
+        android:id="@+id/ivTotalStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalStars"
+        app:layout_constraintStart_toEndOf="@id/tvLanguage"
+        app:layout_constraintTop_toTopOf="@id/tvTotalStars"
+        app:layout_goneMarginStart="0dp"
+        app:srcCompat="@drawable/ic_star_outline_16" />
+
+    <TextView
+        android:id="@+id/tvTotalStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen8"
+        android:layout_marginTop="@dimen/dimen12"
+        android:textSize="@dimen/text14"
+        app:layout_constraintStart_toEndOf="@id/ivTotalStars"
+        app:layout_constraintTop_toBottomOf="@id/tvRepositoryDescription"
+        tools:text="57,850" />
+
+    <TextView
+        android:id="@+id/tvBuiltBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginTop="@dimen/dimen12"
+        android:text="@string/built_by"
+        android:textSize="@dimen/text14"
+        app:layout_constraintStart_toEndOf="@id/tvTotalStars"
+        app:layout_constraintTop_toBottomOf="@id/tvRepositoryDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCollaborators"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen8"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="@id/tvBuiltBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvBuiltBy"
+        app:layout_constraintTop_toTopOf="@id/tvBuiltBy" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/informationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvRepositoryDescription,ivLanguageColor,tvLanguage,ivTotalStars,tvTotalStars,tvBuiltBy,rvCollaborators" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
