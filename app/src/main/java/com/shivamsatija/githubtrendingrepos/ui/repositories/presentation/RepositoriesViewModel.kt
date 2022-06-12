@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shivamsatija.githubtrendingrepos.data.model.Repository
 import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesDataManager
+import com.shivamsatija.githubtrendingrepos.util.CoroutineContextProvider
 import com.shivamsatija.githubtrendingrepos.util.Response
 import com.shivamsatija.githubtrendingrepos.util.ViewState
 import kotlinx.coroutines.Dispatchers
@@ -13,13 +14,15 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class RepositoriesViewModel(
-    private val repositoryDataManager: RepositoriesDataManager
+    private val repositoryDataManager: RepositoriesDataManager,
+    private val coroutineContextProvider: CoroutineContextProvider
 ) : ViewModel() {
 
     val repositoriesLiveData: MutableLiveData<ViewState<List<Repository>>> = MutableLiveData()
     val currentSelectedPositionLiveData: MutableLiveData<String?> = MutableLiveData()
 
-    private var originalRepositories = ArrayList<Repository>()
+    var originalRepositories = ArrayList<Repository>()
+    var DELAY: Long = 300
 
     private var searchJob: Job? = null
 
@@ -50,9 +53,9 @@ class RepositoriesViewModel(
 
     fun searchLocal(searchQuery: String? = null) {
         searchJob?.cancel()
-        searchJob = viewModelScope.launch(Dispatchers.IO) {
+        searchJob = viewModelScope.launch(coroutineContextProvider.IO) {
             searchQuery?.let {
-                delay(300)
+                delay(DELAY)
                 repositoriesLiveData.postValue(ViewState.Success(
                     originalRepositories.filter {
                         it.toString().contains(searchQuery, true)

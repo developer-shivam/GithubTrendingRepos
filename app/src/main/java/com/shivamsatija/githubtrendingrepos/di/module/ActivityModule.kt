@@ -7,6 +7,7 @@ import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesD
 import com.shivamsatija.githubtrendingrepos.di.ActivityContext
 import com.shivamsatija.githubtrendingrepos.di.PerActivity
 import com.shivamsatija.githubtrendingrepos.ui.repositories.presentation.RepositoriesViewModelFactory
+import com.shivamsatija.githubtrendingrepos.util.CoroutineContextProvider
 import dagger.Module
 import dagger.Provides
 
@@ -30,9 +31,10 @@ class ActivityModule(
     @Provides
     @PerActivity
     fun provideRepositoryViewModelFactory(
-        repositoriesDataManager: RepositoriesDataManager
+        repositoriesDataManager: RepositoriesDataManager,
+        coroutineContextProvider: CoroutineContextProvider
     ): RepositoriesViewModelFactory {
-        return RepositoriesViewModelFactory(repositoriesDataManager)
+        return RepositoriesViewModelFactory(repositoriesDataManager, coroutineContextProvider)
     }
 
 }
