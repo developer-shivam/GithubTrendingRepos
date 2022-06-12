@@ -5,31 +5,32 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.shivamsatija.githubtrendingrepos.data.remote.RepositoryService
+import com.shivamsatija.githubtrendingrepos.GitTrendingReposApplication
 import com.shivamsatija.githubtrendingrepos.databinding.ActivityRepositoriesBinding
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.shivamsatija.githubtrendingrepos.di.component.DaggerActivityComponent
+import com.shivamsatija.githubtrendingrepos.di.module.ActivityModule
+import com.shivamsatija.githubtrendingrepos.util.handleState
+import javax.inject.Inject
 
 
 class RepositoriesActivity : AppCompatActivity() {
-
-    private lateinit var repositoryService: RepositoryService
 
     private val repositoryAdapter by lazy {
         RepositoryAdapter(clickCallback)
     }
 
+    @Inject
+    lateinit var repositoriesViewModelFactory: RepositoriesViewModelFactory
+
     private val repositoriesViewModel: RepositoriesViewModel by viewModels {
-        RepositoriesViewModelFactory(repositoryService)
+        repositoriesViewModelFactory
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        performDependencyInjection()
         super.onCreate(savedInstanceState)
         val binding = ActivityRepositoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        createDependencies()
 
         binding.rvRepositories.run {
             adapter = repositoryAdapter
@@ -43,7 +44,13 @@ class RepositoriesActivity : AppCompatActivity() {
         }
 
         repositoriesViewModel.repositoriesLiveData.observe(this) {
-            repositoryAdapter.setList(it)
+            handleState(it, {
+                // show loading state
+            }, { repositories ->
+                repositoryAdapter.setList(repositories)
+            }, { error ->
+                error?.printStackTrace()
+            })
         }
 
         repositoriesViewModel.currentSelectedPosition.observe(this) {
@@ -56,21 +63,13 @@ class RepositoriesActivity : AppCompatActivity() {
         repositoriesViewModel.setSelectedItemPosition(position)
     }
 
-    private fun createDependencies() {
-        val loggingInterceptor = HttpLoggingInterceptor().also {
-            it.level = HttpLoggingInterceptor.Level.BASIC
-        }
-
-        val okHttpClient = OkHttpClient.Builder()
-            .addInterceptor(loggingInterceptor)
+    private fun performDependencyInjection() {
+        DaggerActivityComponent.builder()
+            .applicationComponent(
+                (application as GitTrendingReposApplication).getApplicationComponent()
+            )
+            .activityModule(ActivityModule(this))
             .build()
-
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://gh-trending-api.herokuapp.com/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .client(okHttpClient)
-            .build()
-
-        repositoryService = retrofit.create(RepositoryService::class.java)
+            .inject(this)
     }
 }

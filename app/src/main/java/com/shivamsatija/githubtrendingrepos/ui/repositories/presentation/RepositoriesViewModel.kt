@@ -3,17 +3,17 @@ package com.shivamsatija.githubtrendingrepos.ui.repositories.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.shivamsatija.githubtrendingrepos.data.RepositoriesDataManager
 import com.shivamsatija.githubtrendingrepos.data.model.Repository
-import com.shivamsatija.githubtrendingrepos.data.remote.RepositoryService
-import kotlinx.coroutines.Dispatchers
+import com.shivamsatija.githubtrendingrepos.util.Response
+import com.shivamsatija.githubtrendingrepos.util.ViewState
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class RepositoriesViewModel(
-    private val repositoryService: RepositoryService
+    private val repositoryDataManager: RepositoriesDataManager
 ) : ViewModel() {
 
-    val repositoriesLiveData: MutableLiveData<List<Repository>> = MutableLiveData()
+    val repositoriesLiveData: MutableLiveData<ViewState<List<Repository>>> = MutableLiveData()
 
     val currentSelectedPosition: MutableLiveData<Int> = MutableLiveData()
 
@@ -23,10 +23,17 @@ class RepositoriesViewModel(
 
     private fun fetchRepositories() {
         viewModelScope.launch {
-            val repositories = withContext(Dispatchers.IO) {
-                repositoryService.fetchRepositories()
+            repositoriesLiveData.value = ViewState.Loading()
+            when (val response: Response<List<Repository>> =
+                repositoryDataManager.fetchRepositories()
+            ) {
+                is Response.Success -> {
+                    repositoriesLiveData.value = ViewState.Success(response.data)
+                }
+                is Response.Error -> {
+                    repositoriesLiveData.value = ViewState.Error(response.throwable)
+                }
             }
-            repositoriesLiveData.postValue(repositories)
         }
     }
 
