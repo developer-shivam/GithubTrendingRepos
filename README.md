@@ -9,5 +9,5 @@ Showing list of trending repositories using following source - https://gh-trendi
 - Using Dagger 2 for dependency Injection
 - Used standard libaries like Retrofit, Glide
 
-![](assets/github_trending_repos.png)
-<img src="assets/github_trending_repos.png" width="50%" height="50%">
+<img src="assets/norma.png" width="50%" height="50%">
+<img src="assets/search.png" width="50%" height="50%">
