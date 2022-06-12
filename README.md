@@ -2,6 +2,7 @@
 # GithubTrendingRepos
 
 Showing list of trending repositories using following source - https://gh-trending-api.herokuapp.com
+I guess there is no Github API to fetch trending APIs
 
 - MVVM Architecture
 - 100% Kotlin project
