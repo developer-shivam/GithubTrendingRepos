@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "username": "borisdayma",
+    "repositoryName": "dalle-mini",
+    "url": "https://github.com/borisdayma/dalle-mini",
+    "description": "DALL·E Mini - Generate images from a text prompt",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 5993,
+    "forks": 411,
+    "starsSince": 578,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "borisdayma",
+        "url": "https://github.com/borisdayma",
+        "avatar": "https://avatars.githubusercontent.com/u/715491?s=40&v=4"
+      },
+      {
+        "username": "pcuenca",
+        "url": "https://github.com/pcuenca",
+        "avatar": "https://avatars.githubusercontent.com/u/1177582?s=40&v=4"
+      },
+      {
+        "username": "khalidsaifullaah",
+        "url": "https://github.com/khalidsaifullaah",
+        "avatar": "https://avatars.githubusercontent.com/u/26279642?s=40&v=4"
+      },
+      {
+        "username": "patil-suraj",
+        "url": "https://github.com/patil-suraj",
+        "avatar": "https://avatars.githubusercontent.com/u/27137566?s=40&v=4"
+      },
+      {
+        "username": "tmabraham",
+        "url": "https://github.com/tmabraham",
+        "avatar": "https://avatars.githubusercontent.com/u/37097934?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "username": "atom",
+    "repositoryName": "atom",
+    "url": "https://github.com/atom/atom",
+    "description": "The hackable text editor",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 57965,
+    "forks": 17360,
+    "starsSince": 144,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "kevinsawicki",
+        "url": "https://github.com/kevinsawicki",
+        "avatar": "https://avatars.githubusercontent.com/u/671378?s=40&v=4"
+      },
+      {
+        "username": "nathansobo",
+        "url": "https://github.com/nathansobo",
+        "avatar": "https://avatars.githubusercontent.com/u/1789?s=40&v=4"
+      },
+      {
+        "username": "as-cii",
+        "url": "https://github.com/as-cii",
+        "avatar": "https://avatars.githubusercontent.com/u/482957?s=40&v=4"
+      },
+      {
+        "username": "benogle",
+        "url": "https://github.com/benogle",
+        "avatar": "https://avatars.githubusercontent.com/u/69169?s=40&v=4"
+      },
+      {
+        "username": "maxbrunsfeld",
+        "url": "https://github.com/maxbrunsfeld",
+        "avatar": "https://avatars.githubusercontent.com/u/326587?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "username": "NVlabs",
+    "repositoryName": "eg3d",
+    "url": "https://github.com/NVlabs/eg3d",
+    "description": null,
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 1423,
+    "forks": 104,
+    "starsSince": 63,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "ericryanchan",
+        "url": "https://github.com/ericryanchan",
+        "avatar": "https://avatars.githubusercontent.com/u/56090840?s=40&v=4"
+      },
+      {
+        "username": "matthew-a-chan",
+        "url": "https://github.com/matthew-a-chan",
+        "avatar": "https://avatars.githubusercontent.com/u/22667301?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "username": "openai",
+    "repositoryName": "DALL-E",
+    "url": "https://github.com/openai/DALL-E",
+    "description": "PyTorch package for the discrete VAE used for DALL·E.",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 6634,
+    "forks": 1232,
+    "starsSince": 164,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "adityaramesh",
+        "url": "https://github.com/adityaramesh",
+        "avatar": "https://avatars.githubusercontent.com/u/1999682?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "username": "saharmor",
+    "repositoryName": "dalle-playground",
+    "url": "https://github.com/saharmor/dalle-playground",
+    "description": "A playground to generate images from any text prompt using DALL-E Mini and based on OpenAI's DALL-Ehttps://openai.com/blog/dall-e/",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 1128,
+    "forks": 259,
+    "starsSince": 234,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "saharmor",
+        "url": "https://github.com/saharmor",
+        "avatar": "https://avatars.githubusercontent.com/u/6180201?s=40&v=4"
+      },
+      {
+        "username": "kamalkraj",
+        "url": "https://github.com/kamalkraj",
+        "avatar": "https://avatars.githubusercontent.com/u/17096858?s=40&v=4"
+      },
+      {
+        "username": "VeXHarbinger",
+        "url": "https://github.com/VeXHarbinger",
+        "avatar": "https://avatars.githubusercontent.com/u/830407?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 6,
+    "username": "donnemartin",
+    "repositoryName": "system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 183519,
+    "forks": 33399,
+    "starsSince": 118,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "donnemartin",
+        "url": "https://github.com/donnemartin",
+        "avatar": "https://avatars.githubusercontent.com/u/5458997?s=40&v=4"
+      },
+      {
+        "username": "cclauss",
+        "url": "https://github.com/cclauss",
+        "avatar": "https://avatars.githubusercontent.com/u/3709715?s=40&v=4"
+      },
+      {
+        "username": "satob",
+        "url": "https://github.com/satob",
+        "avatar": "https://avatars.githubusercontent.com/u/171818?s=40&v=4"
+      },
+      {
+        "username": "fluency03",
+        "url": "https://github.com/fluency03",
+        "avatar": "https://avatars.githubusercontent.com/u/7440735?s=40&v=4"
+      },
+      {
+        "username": "sqrthree",
+        "url": "https://github.com/sqrthree",
+        "avatar": "https://avatars.githubusercontent.com/u/8622362?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 7,
+    "username": "youngyangyang04",
+    "repositoryName": "leetcode-master",
+    "url": "https://github.com/youngyangyang04/leetcode-master",
+    "description": "《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥来看看，你会发现相见恨晚！🚀",
+    "language": null,
+    "languageColor": null,
+    "totalStars": 27809,
+    "forks": 7218,
+    "starsSince": 77,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "youngyangyang04",
+        "url": "https://github.com/youngyangyang04",
+        "avatar": "https://avatars.githubusercontent.com/u/8636020?s=40&v=4"
+      },
+      {
+        "username": "xiaofei-2020",
+        "url": "https://github.com/xiaofei-2020",
+        "avatar": "https://avatars.githubusercontent.com/u/60663472?s=40&v=4"
+      },
+      {
+        "username": "KingArthur0205",
+        "url": "https://github.com/KingArthur0205",
+        "avatar": "https://avatars.githubusercontent.com/u/81165851?s=40&v=4"
+      },
+      {
+        "username": "ironartisan",
+        "url": "https://github.com/ironartisan",
+        "avatar": "https://avatars.githubusercontent.com/u/54694467?s=40&v=4"
+      },
+      {
+        "username": "X-shuffle",
+        "url": "https://github.com/X-shuffle",
+        "avatar": "https://avatars.githubusercontent.com/u/53906918?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 8,
+    "username": "digitalocean",
+    "repositoryName": "nginxconfig.io",
+    "url": "https://github.com/digitalocean/nginxconfig.io",
+    "description": "⚙️NGINX config generator on steroids💉",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 20087,
+    "forks": 1400,
+    "starsSince": 672,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "MattIPv4",
+        "url": "https://github.com/MattIPv4",
+        "avatar": "https://avatars.githubusercontent.com/u/12371363?s=40&v=4"
+      },
+      {
+        "username": "apps/dependabot",
+        "url": "https://github.com/apps/dependabot",
+        "avatar": "https://avatars.githubusercontent.com/in/29110?s=40&v=4"
+      },
+      {
+        "username": "moniang",
+        "url": "https://github.com/moniang",
+        "avatar": "https://avatars.githubusercontent.com/u/61287199?s=40&v=4"
+      },
+      {
+        "username": "alexmanno",
+        "url": "https://github.com/alexmanno",
+        "avatar": "https://avatars.githubusercontent.com/u/10499850?s=40&v=4"
+      },
+      {
+        "username": "jcgoette",
+        "url": "https://github.com/jcgoette",
+        "avatar": "https://avatars.githubusercontent.com/u/53531335?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 9,
+    "username": "lucidrains",
+    "repositoryName": "imagen-pytorch",
+    "url": "https://github.com/lucidrains/imagen-pytorch",
+    "description": "Implementation of Imagen, Google's Text-to-Image Neural Network, in Pytorch",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 3046,
+    "forks": 164,
+    "starsSince": 46,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "lucidrains",
+        "url": "https://github.com/lucidrains",
+        "avatar": "https://avatars.githubusercontent.com/u/108653?s=40&v=4"
+      },
+      {
+        "username": "Netruk44",
+        "url": "https://github.com/Netruk44",
+        "avatar": "https://avatars.githubusercontent.com/u/1307061?s=40&v=4"
+      },
+      {
+        "username": "ProGamerGov",
+        "url": "https://github.com/ProGamerGov",
+        "avatar": "https://avatars.githubusercontent.com/u/10626398?s=40&v=4"
+      },
+      {
+        "username": "ryanrussell",
+        "url": "https://github.com/ryanrussell",
+        "avatar": "https://avatars.githubusercontent.com/u/523300?s=40&v=4"
+      },
+      {
+        "username": "jorgemcgomes",
+        "url": "https://github.com/jorgemcgomes",
+        "avatar": "https://avatars.githubusercontent.com/u/3987574?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 10,
+    "username": "ossu",
+    "repositoryName": "computer-science",
+    "url": "https://github.com/ossu/computer-science",
+    "description": "🎓Path to a free self-taught education in Computer Science!",
+    "language": null,
+    "languageColor": null,
+    "totalStars": 116523,
+    "forks": 15774,
+    "starsSince": 586,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "ericdouglas",
+        "url": "https://github.com/ericdouglas",
+        "avatar": "https://avatars.githubusercontent.com/u/4119931?s=40&v=4"
+      },
+      {
+        "username": "joshmhanson",
+        "url": "https://github.com/joshmhanson",
+        "avatar": "https://avatars.githubusercontent.com/u/5695330?s=40&v=4"
+      },
+      {
+        "username": "waciumawanjohi",
+        "url": "https://github.com/waciumawanjohi",
+        "avatar": "https://avatars.githubusercontent.com/u/18407643?s=40&v=4"
+      },
+      {
+        "username": "mkghosh",
+        "url": "https://github.com/mkghosh",
+        "avatar": "https://avatars.githubusercontent.com/u/10495809?s=40&v=4"
+      },
+      {
+        "username": "spamegg1",
+        "url": "https://github.com/spamegg1",
+        "avatar": "https://avatars.githubusercontent.com/u/4255997?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 11,
+    "username": "PaperMC",
+    "repositoryName": "Paper",
+    "url": "https://github.com/PaperMC/Paper",
+    "description": "High performance Spigot fork that aims to fix gameplay and mechanics inconsistencies",
+    "language": "Java",
+    "languageColor": "#b07219",
+    "totalStars": 6276,
+    "forks": 1594,
+    "starsSince": 64,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "aikar",
+        "url": "https://github.com/aikar",
+        "avatar": "https://avatars.githubusercontent.com/u/58008?s=40&v=4"
+      },
+      {
+        "username": "md-5",
+        "url": "https://github.com/md-5",
+        "avatar": "https://avatars.githubusercontent.com/u/1007849?s=40&v=4"
+      },
+      {
+        "username": "zachbr",
+        "url": "https://github.com/zachbr",
+        "avatar": "https://avatars.githubusercontent.com/u/1254957?s=40&v=4"
+      },
+      {
+        "username": "electronicboy",
+        "url": "https://github.com/electronicboy",
+        "avatar": "https://avatars.githubusercontent.com/u/1228900?s=40&v=4"
+      },
+      {
+        "username": "Machine-Maker",
+        "url": "https://github.com/Machine-Maker",
+        "avatar": "https://avatars.githubusercontent.com/u/15055071?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 12,
+    "username": "Schweinepriester",
+    "repositoryName": "github-profile-achievements",
+    "url": "https://github.com/Schweinepriester/github-profile-achievements",
+    "description": "A collection listing all Achievements available on the GitHub profile🏆",
+    "language": null,
+    "languageColor": null,
+    "totalStars": 366,
+    "forks": 43,
+    "starsSince": 56,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "Schweinepriester",
+        "url": "https://github.com/Schweinepriester",
+        "avatar": "https://avatars.githubusercontent.com/u/2644614?s=40&v=4"
+      },
+      {
+        "username": "farkon00",
+        "url": "https://github.com/farkon00",
+        "avatar": "https://avatars.githubusercontent.com/u/59134591?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 13,
+    "username": "daiyu886",
+    "repositoryName": "evil-man",
+    "url": "https://github.com/daiyu886/evil-man",
+    "description": null,
+    "language": null,
+    "languageColor": null,
+    "totalStars": 141,
+    "forks": 161,
+    "starsSince": 18,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "CNwoman-bot",
+        "url": "https://github.com/CNwoman-bot",
+        "avatar": "https://avatars.githubusercontent.com/u/38938749?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 14,
+    "username": "vaxerski",
+    "repositoryName": "Hyprland",
+    "url": "https://github.com/vaxerski/Hyprland",
+    "description": "Hyprland is a dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "language": "C++",
+    "languageColor": "#f34b7d",
+    "totalStars": 1330,
+    "forks": 32,
+    "starsSince": 39,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "vaxerski",
+        "url": "https://github.com/vaxerski",
+        "avatar": "https://avatars.githubusercontent.com/u/43317083?s=40&v=4"
+      },
+      {
+        "username": "ThatOneCalculator",
+        "url": "https://github.com/ThatOneCalculator",
+        "avatar": "https://avatars.githubusercontent.com/u/44733677?s=40&v=4"
+      },
+      {
+        "username": "ElectronicsArchiver",
+        "url": "https://github.com/ElectronicsArchiver",
+        "avatar": "https://avatars.githubusercontent.com/u/85485984?s=40&v=4"
+      },
+      {
+        "username": "Narice",
+        "url": "https://github.com/Narice",
+        "avatar": "https://avatars.githubusercontent.com/u/31109099?s=40&v=4"
+      },
+      {
+        "username": "viperML",
+        "url": "https://github.com/viperML",
+        "avatar": "https://avatars.githubusercontent.com/u/11395853?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 15,
+    "username": "microsoft",
+    "repositoryName": "Data-Science-For-Beginners",
+    "url": "https://github.com/microsoft/Data-Science-For-Beginners",
+    "description": "10 Weeks, 20 Lessons, Data Science for All!",
+    "language": "Jupyter Notebook",
+    "languageColor": "#DA5B0B",
+    "totalStars": 14276,
+    "forks": 2378,
+    "starsSince": 273,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "paladique",
+        "url": "https://github.com/paladique",
+        "avatar": "https://avatars.githubusercontent.com/u/1414307?s=40&v=4"
+      },
+      {
+        "username": "jlooper",
+        "url": "https://github.com/jlooper",
+        "avatar": "https://avatars.githubusercontent.com/u/1450004?s=40&v=4"
+      },
+      {
+        "username": "Amagash",
+        "url": "https://github.com/Amagash",
+        "avatar": "https://avatars.githubusercontent.com/u/20380447?s=40&v=4"
+      },
+      {
+        "username": "Vidushi-Gupta",
+        "url": "https://github.com/Vidushi-Gupta",
+        "avatar": "https://avatars.githubusercontent.com/u/55969597?s=40&v=4"
+      },
+      {
+        "username": "flegaspi700",
+        "url": "https://github.com/flegaspi700",
+        "avatar": "https://avatars.githubusercontent.com/u/75757416?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 16,
+    "username": "microsoft",
+    "repositoryName": "Web-Dev-For-Beginners",
+    "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+    "description": "24 Lessons, 12 Weeks, Get Started as a Web Developer",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 52852,
+    "forks": 7759,
+    "starsSince": 95,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "jlooper",
+        "url": "https://github.com/jlooper",
+        "avatar": "https://avatars.githubusercontent.com/u/1450004?s=40&v=4"
+      },
+      {
+        "username": "ManuSquall",
+        "url": "https://github.com/ManuSquall",
+        "avatar": "https://avatars.githubusercontent.com/u/29026887?s=40&v=4"
+      },
+      {
+        "username": "San1ay",
+        "url": "https://github.com/San1ay",
+        "avatar": "https://avatars.githubusercontent.com/u/54913971?s=40&v=4"
+      },
+      {
+        "username": "silverskyvicto",
+        "url": "https://github.com/silverskyvicto",
+        "avatar": "https://avatars.githubusercontent.com/u/3609003?s=40&v=4"
+      },
+      {
+        "username": "EugeneGohh",
+        "url": "https://github.com/EugeneGohh",
+        "avatar": "https://avatars.githubusercontent.com/u/64187129?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 17,
+    "username": "microsoft",
+    "repositoryName": "ML-For-Beginners",
+    "url": "https://github.com/microsoft/ML-For-Beginners",
+    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+    "language": "Jupyter Notebook",
+    "languageColor": "#DA5B0B",
+    "totalStars": 38105,
+    "forks": 7425,
+    "starsSince": 265,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "jlooper",
+        "url": "https://github.com/jlooper",
+        "avatar": "https://avatars.githubusercontent.com/u/1450004?s=40&v=4"
+      },
+      {
+        "username": "hereje",
+        "url": "https://github.com/hereje",
+        "avatar": "https://avatars.githubusercontent.com/u/3022824?s=40&v=4"
+      },
+      {
+        "username": "softchris",
+        "url": "https://github.com/softchris",
+        "avatar": "https://avatars.githubusercontent.com/u/4598064?s=40&v=4"
+      },
+      {
+        "username": "minwook-shin",
+        "url": "https://github.com/minwook-shin",
+        "avatar": "https://avatars.githubusercontent.com/u/12551635?s=40&v=4"
+      },
+      {
+        "username": "feiyun0112",
+        "url": "https://github.com/feiyun0112",
+        "avatar": "https://avatars.githubusercontent.com/u/10190938?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 18,
+    "username": "libre-tube",
+    "repositoryName": "LibreTube",
+    "url": "https://github.com/libre-tube/LibreTube",
+    "description": "An alternative YouTube front end, for Android. [WIP]",
+    "language": "Kotlin",
+    "languageColor": "#A97BFF",
+    "totalStars": 1819,
+    "forks": 105,
+    "starsSince": 85,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "Bnyro",
+        "url": "https://github.com/Bnyro",
+        "avatar": "https://avatars.githubusercontent.com/u/82752168?s=40&v=4"
+      },
+      {
+        "username": "archroid",
+        "url": "https://github.com/archroid",
+        "avatar": "https://avatars.githubusercontent.com/u/50708771?s=40&v=4"
+      },
+      {
+        "username": "alefvanoon",
+        "url": "https://github.com/alefvanoon",
+        "avatar": "https://avatars.githubusercontent.com/u/53198048?s=40&v=4"
+      },
+      {
+        "username": "FireMasterK",
+        "url": "https://github.com/FireMasterK",
+        "avatar": "https://avatars.githubusercontent.com/u/20838718?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 19,
+    "username": "home-assistant",
+    "repositoryName": "core",
+    "url": "https://github.com/home-assistant/core",
+    "description": "🏡Open source home automation that puts local control and privacy first.",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 53076,
+    "forks": 18466,
+    "starsSince": 19,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "balloob",
+        "url": "https://github.com/balloob",
+        "avatar": "https://avatars.githubusercontent.com/u/1444314?s=40&v=4"
+      },
+      {
+        "username": "bdraco",
+        "url": "https://github.com/bdraco",
+        "avatar": "https://avatars.githubusercontent.com/u/663432?s=40&v=4"
+      },
+      {
+        "username": "frenck",
+        "url": "https://github.com/frenck",
+        "avatar": "https://avatars.githubusercontent.com/u/195327?s=40&v=4"
+      },
+      {
+        "username": "fabaff",
+        "url": "https://github.com/fabaff",
+        "avatar": "https://avatars.githubusercontent.com/u/116184?s=40&v=4"
+      },
+      {
+        "username": "emontnemery",
+        "url": "https://github.com/emontnemery",
+        "avatar": "https://avatars.githubusercontent.com/u/14281572?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 20,
+    "username": "siyuan-note",
+    "repositoryName": "siyuan",
+    "url": "https://github.com/siyuan-note/siyuan",
+    "description": "📕SiYuan is a local-first personal knowledge management system, supports fine-grained block-level reference, and Markdown WYSIWYG. 思源笔记是一款本地优先的个人知识管理系统， 支持细粒度块级引用和 Markdown 所见即所得。Roadmaphttps://github.com/orgs/siyuan-note/projects/1",
+    "language": "TypeScript",
+    "languageColor": "#3178c6",
+    "totalStars": 4415,
+    "forks": 356,
+    "starsSince": 28,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "88250",
+        "url": "https://github.com/88250",
+        "avatar": "https://avatars.githubusercontent.com/u/873584?s=40&v=4"
+      },
+      {
+        "username": "Vanessa219",
+        "url": "https://github.com/Vanessa219",
+        "avatar": "https://avatars.githubusercontent.com/u/970828?s=40&v=4"
+      },
+      {
+        "username": "ssfdust",
+        "url": "https://github.com/ssfdust",
+        "avatar": "https://avatars.githubusercontent.com/u/3088610?s=40&v=4"
+      },
+      {
+        "username": "kecrily",
+        "url": "https://github.com/kecrily",
+        "avatar": "https://avatars.githubusercontent.com/u/45708948?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 21,
+    "username": "vlang",
+    "repositoryName": "v",
+    "url": "https://github.com/vlang/v",
+    "description": "Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies.https://vlang.io",
+    "language": "V",
+    "languageColor": "#4f87c4",
+    "totalStars": 29256,
+    "forks": 1807,
+    "starsSince": 12,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "medvednikov",
+        "url": "https://github.com/medvednikov",
+        "avatar": "https://avatars.githubusercontent.com/u/687996?s=40&v=4"
+      },
+      {
+        "username": "spytheman",
+        "url": "https://github.com/spytheman",
+        "avatar": "https://avatars.githubusercontent.com/u/26967?s=40&v=4"
+      },
+      {
+        "username": "yuyi98",
+        "url": "https://github.com/yuyi98",
+        "avatar": "https://avatars.githubusercontent.com/u/6949593?s=40&v=4"
+      },
+      {
+        "username": "joe-conigliaro",
+        "url": "https://github.com/joe-conigliaro",
+        "avatar": "https://avatars.githubusercontent.com/u/2801678?s=40&v=4"
+      },
+      {
+        "username": "Larpon",
+        "url": "https://github.com/Larpon",
+        "avatar": "https://avatars.githubusercontent.com/u/768942?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 22,
+    "username": "TomSchimansky",
+    "repositoryName": "CustomTkinter",
+    "url": "https://github.com/TomSchimansky/CustomTkinter",
+    "description": "A modern and customizable python UI-library based on Tkinter",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "totalStars": 1748,
+    "forks": 125,
+    "starsSince": 91,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "TomSchimansky",
+        "url": "https://github.com/TomSchimansky",
+        "avatar": "https://avatars.githubusercontent.com/u/66446067?s=40&v=4"
+      },
+      {
+        "username": "demberto",
+        "url": "https://github.com/demberto",
+        "avatar": "https://avatars.githubusercontent.com/u/65948403?s=40&v=4"
+      },
+      {
+        "username": "felipetesc",
+        "url": "https://github.com/felipetesc",
+        "avatar": "https://avatars.githubusercontent.com/u/2336812?s=40&v=4"
+      },
+      {
+        "username": "o0morgan0o",
+        "url": "https://github.com/o0morgan0o",
+        "avatar": "https://avatars.githubusercontent.com/u/31690836?s=40&v=4"
+      },
+      {
+        "username": "bengy3d",
+        "url": "https://github.com/bengy3d",
+        "avatar": "https://avatars.githubusercontent.com/u/45341502?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 23,
+    "username": "medusajs",
+    "repositoryName": "medusa",
+    "url": "https://github.com/medusajs/medusa",
+    "description": "The open-source Shopify alternative⚡️",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 12052,
+    "forks": 658,
+    "starsSince": 40,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "srindom",
+        "url": "https://github.com/srindom",
+        "avatar": "https://avatars.githubusercontent.com/u/7554214?s=40&v=4"
+      },
+      {
+        "username": "olivermrbl",
+        "url": "https://github.com/olivermrbl",
+        "avatar": "https://avatars.githubusercontent.com/u/59018053?s=40&v=4"
+      },
+      {
+        "username": "pKorsholm",
+        "url": "https://github.com/pKorsholm",
+        "avatar": "https://avatars.githubusercontent.com/u/88927411?s=40&v=4"
+      },
+      {
+        "username": "shahednasser",
+        "url": "https://github.com/shahednasser",
+        "avatar": "https://avatars.githubusercontent.com/u/27354907?s=40&v=4"
+      },
+      {
+        "username": "sebastiannicolajsen",
+        "url": "https://github.com/sebastiannicolajsen",
+        "avatar": "https://avatars.githubusercontent.com/u/80953876?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 24,
+    "username": "iptv-org",
+    "repositoryName": "iptv",
+    "url": "https://github.com/iptv-org/iptv",
+    "description": "Collection of publicly available IPTV channels from all over the world",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "totalStars": 51944,
+    "forks": 9058,
+    "starsSince": 65,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "freearhey",
+        "url": "https://github.com/freearhey",
+        "avatar": "https://avatars.githubusercontent.com/u/7253922?s=40&v=4"
+      },
+      {
+        "username": "LaneSh4d0w",
+        "url": "https://github.com/LaneSh4d0w",
+        "avatar": "https://avatars.githubusercontent.com/u/30985701?s=40&v=4"
+      },
+      {
+        "username": "Dum4G",
+        "url": "https://github.com/Dum4G",
+        "avatar": "https://avatars.githubusercontent.com/u/5430116?s=40&v=4"
+      },
+      {
+        "username": "apps/iptv-bot",
+        "url": "https://github.com/apps/iptv-bot",
+        "avatar": "https://avatars.githubusercontent.com/in/117246?s=40&v=4"
+      },
+      {
+        "username": "jkemp814",
+        "url": "https://github.com/jkemp814",
+        "avatar": "https://avatars.githubusercontent.com/u/12059343?s=40&v=4"
+      }
+    ]
+  },
+  {
+    "rank": 25,
+    "username": "GitHubDaily",
+    "repositoryName": "GitHubDaily",
+    "url": "https://github.com/GitHubDaily/GitHubDaily",
+    "description": "坚持分享 GitHub 上高质量、有趣实用的开源技术教程、开发者工具、编程网站、技术资讯。A list cool, interesting projects of GitHub.",
+    "language": null,
+    "languageColor": null,
+    "totalStars": 14666,
+    "forks": 1721,
+    "starsSince": 122,
+    "since": "daily",
+    "builtBy": [
+      {
+        "username": "YSoer",
+        "url": "https://github.com/YSoer",
+        "avatar": "https://avatars.githubusercontent.com/u/42373389?s=40&v=4"
+      },
+      {
+        "username": "Freelander",
+        "url": "https://github.com/Freelander",
+        "avatar": "https://avatars.githubusercontent.com/u/10611037?s=40&v=4"
+      },
+      {
+        "username": "Azleal",
+        "url": "https://github.com/Azleal",
+        "avatar": "https://avatars.githubusercontent.com/u/7901126?s=40&v=4"
+      }
+    ]
+  }
+]
