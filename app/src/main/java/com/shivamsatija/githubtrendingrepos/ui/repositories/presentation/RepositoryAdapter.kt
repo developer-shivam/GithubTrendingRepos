@@ -27,7 +27,7 @@ class RepositoryAdapter(
     fun setList(repositories: List<Repository>) {
         this.repositories.clear()
         this.repositories.addAll(repositories)
-        notifyItemRangeInserted(0, repositories.size)
+        notifyDataSetChanged()
     }
 
     fun updateSelectedItem(position: Int) {
@@ -39,7 +39,9 @@ class RepositoryAdapter(
             val currentSelectedItemPosition = selectedItemPosition
             selectedItemPosition = position
             notifyItemChanged(currentSelectedItemPosition, PAYLOAD_ITEM_SELECTION)
-            notifyItemChanged(selectedItemPosition, PAYLOAD_ITEM_SELECTION)
+            if (selectedItemPosition != RecyclerView.NO_POSITION) {
+                notifyItemChanged(selectedItemPosition, PAYLOAD_ITEM_SELECTION)
+            }
         }
     }
 

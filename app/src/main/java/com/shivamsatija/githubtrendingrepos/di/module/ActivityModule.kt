@@ -2,8 +2,8 @@ package com.shivamsatija.githubtrendingrepos.di.module
 
 import android.app.Activity
 import android.content.Context
-import com.shivamsatija.githubtrendingrepos.data.RepositoriesDataManager
-import com.shivamsatija.githubtrendingrepos.data.RepositoriesDataManagerImpl
+import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesDataManager
+import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesDataManagerImpl
 import com.shivamsatija.githubtrendingrepos.di.ActivityContext
 import com.shivamsatija.githubtrendingrepos.di.PerActivity
 import com.shivamsatija.githubtrendingrepos.ui.repositories.presentation.RepositoriesViewModelFactory

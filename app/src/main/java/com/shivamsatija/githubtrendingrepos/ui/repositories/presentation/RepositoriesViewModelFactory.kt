@@ -2,7 +2,7 @@ package com.shivamsatija.githubtrendingrepos.ui.repositories.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.shivamsatija.githubtrendingrepos.data.RepositoriesDataManager
+import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesDataManager
 
 class RepositoriesViewModelFactory(
     private val repositoryDataManager: RepositoriesDataManager

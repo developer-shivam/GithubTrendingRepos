@@ -3,7 +3,7 @@ package com.shivamsatija.githubtrendingrepos.ui.repositories.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shivamsatija.githubtrendingrepos.data.RepositoriesDataManager
+import com.shivamsatija.githubtrendingrepos.ui.repositories.domain.RepositoriesDataManager
 import com.shivamsatija.githubtrendingrepos.data.model.Repository
 import com.shivamsatija.githubtrendingrepos.util.Response
 import com.shivamsatija.githubtrendingrepos.util.ViewState
@@ -21,7 +21,7 @@ class RepositoriesViewModel(
         fetchRepositories()
     }
 
-    private fun fetchRepositories() {
+    fun fetchRepositories() {
         viewModelScope.launch {
             repositoriesLiveData.value = ViewState.Loading()
             when (val response: Response<List<Repository>> =

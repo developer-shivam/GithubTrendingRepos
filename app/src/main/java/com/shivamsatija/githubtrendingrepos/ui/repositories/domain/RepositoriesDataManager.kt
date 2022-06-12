@@ -1,4 +1,4 @@
-package com.shivamsatija.githubtrendingrepos.data
+package com.shivamsatija.githubtrendingrepos.ui.repositories.domain
 
 import com.shivamsatija.githubtrendingrepos.data.model.Repository
 import com.shivamsatija.githubtrendingrepos.util.Response
