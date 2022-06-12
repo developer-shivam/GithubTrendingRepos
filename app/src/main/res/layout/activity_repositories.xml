@@ -10,9 +10,9 @@
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:layout_constraintStart_toStartOf="parent"
         android:paddingStart="@dimen/dimen16"
         android:paddingEnd="@dimen/dimen16"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -27,5 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tvNoRepositories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_repositories" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

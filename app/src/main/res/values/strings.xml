@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GithubTrendingRepos</string>
     <string name="built_by">Built by</string>
+    <string name="no_repositories">No Repositories</string>
 </resources>

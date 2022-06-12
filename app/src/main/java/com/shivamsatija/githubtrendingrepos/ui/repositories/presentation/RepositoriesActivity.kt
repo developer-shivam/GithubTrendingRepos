@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -67,9 +68,18 @@ class RepositoriesActivity : AppCompatActivity() {
                 binding.swipeRefreshLayout.isRefreshing = true
             }, { repositories ->
                 binding.swipeRefreshLayout.isRefreshing = false
-                repositoryAdapter.setList(repositories)
+                if (repositories.isNotEmpty()) {
+                    repositoryAdapter.setList(repositories)
+                    binding.rvRepositories.visibility = View.VISIBLE
+                    binding.tvNoRepositories.visibility = View.GONE
+                } else {
+                    binding.rvRepositories.visibility = View.GONE
+                    binding.tvNoRepositories.visibility = View.VISIBLE
+                }
             }, { error ->
-                binding.swipeRefreshLayout.isRefreshing = true
+                binding.rvRepositories.visibility = View.GONE
+                binding.tvNoRepositories.visibility = View.VISIBLE
+                binding.swipeRefreshLayout.isRefreshing = false
                 error?.printStackTrace()
             })
         }

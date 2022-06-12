@@ -10,6 +10,7 @@ Showing list of trending repositories using following source - https://gh-trendi
 - Used standard libaries like Retrofit, Glide
 
 <div class="row">
-    <img src="assets/normal.png" width="40%" height="40%">
-    <img src="assets/search.png" width="40%" height="40%">
+    <img src="assets/normal.png" width="30%" height="30%">
+    <img src="assets/search.png" width="30%" height="30%">
+    <img src="assets/no_repos.png" width="30%" height="30%">
 </div>
