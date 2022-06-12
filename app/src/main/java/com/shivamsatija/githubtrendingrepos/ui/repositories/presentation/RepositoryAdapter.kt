@@ -13,12 +13,12 @@ import com.shivamsatija.githubtrendingrepos.data.model.Repository
 import com.shivamsatija.githubtrendingrepos.databinding.LayoutRepositoryItemBinding
 
 class RepositoryAdapter(
-    private val clickCallback: (Int) -> Unit
+    private val clickCallback: (String) -> Unit
 ) : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHolder>() {
 
     private val repositories = ArrayList<Repository>()
 
-    private var selectedItemPosition = RecyclerView.NO_POSITION
+    private var selectedItemId: String? = null
 
     companion object {
         const val PAYLOAD_ITEM_SELECTION = 1
@@ -30,19 +30,15 @@ class RepositoryAdapter(
         notifyDataSetChanged()
     }
 
-    fun updateSelectedItem(position: Int) {
-        if (selectedItemPosition == RecyclerView.NO_POSITION) {
-            // No position is selected
-            selectedItemPosition = position
-            notifyItemChanged(selectedItemPosition, PAYLOAD_ITEM_SELECTION)
-        } else {
-            val currentSelectedItemPosition = selectedItemPosition
-            selectedItemPosition = position
-            notifyItemChanged(currentSelectedItemPosition, PAYLOAD_ITEM_SELECTION)
-            if (selectedItemPosition != RecyclerView.NO_POSITION) {
-                notifyItemChanged(selectedItemPosition, PAYLOAD_ITEM_SELECTION)
-            }
+    fun updateSelectedItem(id: String? = null) {
+        // check if last selected item is in current list
+        val position = repositories.indexOfFirst { it.getId() == selectedItemId }
+        selectedItemId = id
+        if (position != RecyclerView.NO_POSITION) {
+            notifyItemChanged(position, PAYLOAD_ITEM_SELECTION)
         }
+        val currentSelectedItemPosition = repositories.indexOfFirst { it.getId() == selectedItemId }
+        notifyItemChanged(currentSelectedItemPosition, PAYLOAD_ITEM_SELECTION)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepositoryViewHolder {
@@ -75,19 +71,21 @@ class RepositoryAdapter(
 
     inner class RepositoryViewHolder(
         private val itemBinding: LayoutRepositoryItemBinding,
-        clickCallback: (Int) -> Unit
+        clickCallback: (String) -> Unit
     ) : RecyclerView.ViewHolder(itemBinding.root) {
 
         private var repository: Repository? = null
 
         init {
             itemBinding.root.setOnClickListener {
-                clickCallback(adapterPosition)
+                repository?.let {
+                    clickCallback(it.getId())
+                }
             }
         }
 
         fun toggleSelection() {
-            if (adapterPosition == selectedItemPosition) {
+            if (repository?.getId() == selectedItemId) {
                 itemBinding.informationGroup.visibility = View.VISIBLE
             } else {
                 itemBinding.informationGroup.visibility = View.GONE

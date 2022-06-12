@@ -27,4 +27,6 @@ data class Repository(
     val since: String? = null,
     @SerializedName("builtBy")
     val collaborators: List<Collaborator>? = null
-)
+) {
+    fun getId() : String = "$username$repositoryName"
+}

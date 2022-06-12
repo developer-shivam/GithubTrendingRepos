@@ -1,6 +1,9 @@
 package com.shivamsatija.githubtrendingrepos.ui.repositories.presentation
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextUtils
+import android.text.TextWatcher
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -29,8 +32,8 @@ class RepositoriesActivity : AppCompatActivity() {
         repositoriesViewModelFactory
     }
 
-    private var clickCallback: (Int) -> Unit = { position ->
-        repositoriesViewModel.setSelectedItemPosition(position)
+    private var clickCallback: (String) -> Unit = { position ->
+        repositoriesViewModel.setSelectedItemId(position)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,10 +43,11 @@ class RepositoriesActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupObservers()
         setupRecyclerView()
+        setupSearch()
 
         binding.swipeRefreshLayout.setOnRefreshListener {
             repositoriesViewModel.fetchRepositories()
-            repositoriesViewModel.setSelectedItemPosition(RecyclerView.NO_POSITION)
+            repositoriesViewModel.setSelectedItemId()
         }
     }
 
@@ -70,7 +74,7 @@ class RepositoriesActivity : AppCompatActivity() {
             })
         }
 
-        repositoriesViewModel.currentSelectedPosition.observe(this) {
+        repositoriesViewModel.currentSelectedPositionLiveData.observe(this) {
             repositoryAdapter.updateSelectedItem(it)
         }
     }
@@ -86,5 +90,36 @@ class RepositoriesActivity : AppCompatActivity() {
                 )
             )
         }
+    }
+
+    private fun setupSearch() {
+        binding.etSearch
+            .addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {
+                }
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                }
+
+                override fun onTextChanged(
+                    query: CharSequence?,
+                    start: Int,
+                    before: Int,
+                    count: Int
+                ) {
+                    if (!TextUtils.isEmpty(query)) {
+                        if (query!!.length > 1) {
+                            repositoriesViewModel.searchLocal(query.toString())
+                        }
+                    } else {
+                        repositoriesViewModel.searchLocal(query.toString())
+                    }
+                }
+            })
     }
 }
